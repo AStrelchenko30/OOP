@@ -1,4 +1,4 @@
-public class Transport {
+public abstract class Transport implements ServiceCheck {
 
     private String modelName;
     private int wheelsCount;
@@ -24,9 +24,5 @@ public class Transport {
         this.wheelsCount = wheelsCount;
     }
 
-    public void updateTyre() {
-    }
-    public void checkEngine() {
-    }
-
+    public abstract void updateTyre() ;
 }
